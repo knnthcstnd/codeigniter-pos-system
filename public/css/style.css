@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #1f2937;
+    background: #f3f4f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 8%;
+    color: white;
+    background: #1e3a8a;
+}
+
+.brand {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: min(1100px, 90%);
+    min-height: calc(100vh - 145px);
+    margin: 40px auto;
+}
+
+.hero {
+    padding: 80px 30px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    margin-top: 0;
+    color: #1e3a8a;
+    font-size: 42px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    background: #1e3a8a;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button.secondary {
+    background: #475569;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    margin-bottom: 8px;
+    color: #1e3a8a;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    color: white;
+    background: #1e3a8a;
+}
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+footer {
+    padding: 18px;
+    color: white;
+    background: #1e293b;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .navbar,
+    .actions {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
